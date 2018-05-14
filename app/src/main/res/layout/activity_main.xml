@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar_app"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_app">
+
+        <!--
+
+            put your activity content here
+            You can change the layout to anything you want
+            right now it is a linear layout
+
+        -->
+
+        <ListView
+            android:id="@+id/listView_lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ccffff">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
